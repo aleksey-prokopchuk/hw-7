@@ -1,0 +1,238 @@
+:root {
+  /* Цветовая гамма */
+  --main-txt-color: #000000;
+  --green-color: #248900;
+  --light-green-color: #c8e1bf;
+  --dark-green-color: #0f3700;
+  --bg-color: #fff;
+
+  /* Шрифты */
+  --main-font: Montserrat, sans-serif;
+  --secondary-font: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Список без маркеров */
+.list-no-marker {
+  list-style: none;
+  padding-left: 0;
+}
+
+body {
+  color: var(--main-txt-color);
+  background-color: var(--bg-color);
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  color: var(--main-txt-color);
+}
+
+/* Ссылки без подчеркивания */
+.link-no-dekor {
+  text-decoration: none;
+}
+
+/* --- --- Шапка ------------- */
+/* Верхняя линия ------ */
+header .link {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: var(--main-txt-color);
+}
+
+header .link:hover,
+header .link:focus {
+  color: var(--green-color);
+}
+
+header .button {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: var(--bg-color);
+  background-color: var(--light-green-color);
+  border: none;
+  cursor: pointer;
+
+  padding: 14px 35px;
+}
+
+header .button:hover,
+header .button:focus {
+  background-color: var(--green-color);
+}
+
+/* Секция салаты */
+
+.title {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+
+  color: var(--green-color);
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.23;
+  color: var(--main-txt-color);
+
+  margin-bottom: 22px;
+}
+
+.portion {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--light-green-color);
+  margin-bottom: 21px;
+}
+
+.description {
+  /* font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--main-txt-color); */
+  margin-bottom: 22px;
+}
+
+.price {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.42;
+
+  text-transform: lowercase;
+
+  color: #000000;
+}
+
+.full-list {
+  display: block;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-decoration-line: underline;
+  color: var(--dark-green-color);
+  text-align: center;
+}
+
+.stock .subtitle {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.23;
+  letter-spacing: 0.05em;
+  color: var(--main-txt-color);
+
+  margin-bottom: 35px;
+}
+
+/* Акции */
+.stock .description {
+  font-family: var(--main-font);
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 45px;
+}
+
+/* О нас */
+.about .description {
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 1.21;
+  letter-spacing: 0.05em;
+  color: var(--main-txt-color);
+}
+
+.about .description:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+/* Контакты */
+.contacts .subtitle {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 1.23;
+  letter-spacing: 0.05em;
+
+  margin-bottom: 20px;
+}
+
+.contacts .item {
+  font-family: var(--secondary-font);
+  font-weight: 300;
+  font-size: 27px;
+  line-height: 1.19;
+  letter-spacing: 0.05em;
+}
+
+.contacts .item-phone:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.contacts .link-no-dekor {
+  color: var(--main-txt-color);
+}
+
+.contacts .list:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.contacts .item-social:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.contacts .button {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+
+  color: var(--bg-color);
+  background-color: var(--light-green-color);
+  border: none;
+  cursor: pointer;
+
+  padding: 14px 43px;
+}
+
+.contacts .button:hover,
+.contacts .button:focus {
+  background-color: var(--green-color);
+}
