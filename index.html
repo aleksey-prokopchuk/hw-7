@@ -21,148 +21,177 @@
     <!-- Шапка -->
     <header>
       <!-- Верхняя линия -->
-      <a href="">
-        <img class="logo" src="./images/logo.svg" alt="Healthiest" width="181" height="55" />
-      </a>
-      <ul class="list list-no-marker">
-        <li class="item">
-          <a class="link link-no-dekor" href="tel:+380951245063">+380 95 124 50 63</a>
-        </li>
-        <li class="item">
-          <a class="link link-no-dekor" href="tel:+380502792045">+380 50 279 20 45</a>
-        </li>
-      </ul>
-      <button class="button">Login</button>
-
+      <div class="container">
+        <a href="">
+          <img class="logo" src="./images/logo.svg" alt="Healthiest" width="181" height="55" />
+        </a>
+        <div class="wrapper">
+          <ul class="list list-no-marker">
+            <li class="item">
+              <a class="link link-no-dekor" href="tel:+380951245063">+380 95 124 50 63</a>
+            </li>
+            <li class="item">
+              <a class="link link-no-dekor" href="tel:+380502792045">+380 50 279 20 45</a>
+            </li>
+          </ul>
+          <button class="button">Login</button>
+        </div>
+      </div>
+    </header>
+    <main>
       <!-- Герой -->
       <section class="hero">
         <h1 hidden>Healthiest</h1>
         <!-- <img src="./images/hero.jpg" alt="" /> -->
       </section>
-    </header>
-    <main>
       <!-- Салаты -->
       <section class="salads">
-        <h2 class="title">Салаты</h2>
-        <ul class="list list-no-marker">
-          <li class="item">
-            <h3 class="subtitle">Салат Греческий</h3>
-            <img src="./images/greek-salad.jpg" alt="Салат Греческий" width="310" height="304" />
-            <p class="portion">Вес: 250 г</p>
-            <p class="description">
-              Орегано, масло оливковое, огурец, маслины, базилик, лук красный, перец болгарский,
-              помидор, сыр брынза.
-            </p>
-            <p class="price">180 грн</p>
-          </li>
-          <li class="item">
-            <h3 class="subtitle">Салат Цезарь</h3>
-            <img src="./images/caesar-salad.jpg" alt="Салат Цезарь" width="310" height="304" />
-            <p class="portion">Вес: 300 г</p>
-            <p class="description">
-              Салат айсберг, лист салата, помидоры черри, соус к салату Цезарь, сухарики пшеничные,
-              сыр пармезан, филе куриное, яйца перепелиные.
-            </p>
-            <p class="price">200 грн</p>
-          </li>
-          <li class="item">
-            <h3 class="subtitle">Салат Сивид</h3>
-            <img src="./images/seaweed-salad.jpg" alt="Салат Сивид" width="310" height="304" />
-            <p class="portion">Вес: 200 г</p>
-            <p class="description">Водоросли сивид, кунжут, соус ореховый.</p>
-            <p class="price">150 грн</p>
-          </li>
-        </ul>
-        <a class="full-list link-no-dekor" href="">Посмотреть все салаты</a>
+        <div class="container">
+          <h2 class="title">Салаты</h2>
+          <ul class="list list-card list-no-marker">
+            <li class="item item-card">
+              <h3 class="subtitle">Салат Греческий</h3>
+              <img
+                class="img-card"
+                src="./images/greek-salad.jpg"
+                alt="Салат Греческий"
+                width="310"
+                height="304"
+              />
+              <p class="portion">Вес: 250 г</p>
+              <p class="description">
+                Орегано, масло оливковое, огурец, маслины, базилик, лук красный, перец болгарский,
+                помидор, сыр брынза.
+              </p>
+              <p class="price">180 грн</p>
+            </li>
+            <li class="item item-card">
+              <h3 class="subtitle">Салат Цезарь</h3>
+              <img
+                class="img-card"
+                src="./images/caesar-salad.jpg"
+                alt="Салат Цезарь"
+                width="310"
+                height="304"
+              />
+              <p class="portion">Вес: 300 г</p>
+              <p class="description">
+                Салат айсберг, лист салата, помидоры черри, соус к салату Цезарь, сухарики
+                пшеничные, сыр пармезан, филе куриное, яйца перепелиные.
+              </p>
+              <p class="price">200 грн</p>
+            </li>
+            <li class="item item-card">
+              <h3 class="subtitle">Салат Сивид</h3>
+              <img
+                class="img-card"
+                src="./images/seaweed-salad.jpg"
+                alt="Салат Сивид"
+                width="310"
+                height="304"
+              />
+              <p class="portion">Вес: 200 г</p>
+              <p class="description">Водоросли сивид, кунжут, соус ореховый.</p>
+              <p class="price">150 грн</p>
+            </li>
+          </ul>
+          <a class="full-list link-no-dekor" href="">Посмотреть все салаты</a>
+        </div>
       </section>
       <!-- Супы -->
       <section class="soups">
-        <h2 class="title">Супы</h2>
-        <ul class="list list-no-marker">
-          <li class="item">
-            <h3 class="subtitle">Бульон куриный</h3>
-            <img src="./images/chicken-broth.jpg" alt="Бульон куриный" />
-            <p class="portion">Вес: 300 г</p>
-            <p class="description">
-              Лук зеленый, морковь, петрушка, бульон куриный, яйца перепелиные, спагетти.
-            </p>
-            <p class="price">250 грн</p>
-          </li>
-          <li class="item">
-            <h3 class="subtitle">Сырный крем-суп</h3>
-            <img src="./images/cheese-cream-soup.jpg" alt="Сырный крем-суп" />
-            <p class="portion">Вес: 310 г</p>
-            <p class="description">
-              Лук репчатый, морковь, бульон куриный, укроп, котлета куриная, сырное ассорти.
-            </p>
-            <p class="price">280 грн</p>
-          </li>
-          <li class="item">
-            <h3 class="subtitle">Мисо-суп</h3>
-            <img src="./images/miso-soup.jpg" alt="Мисо-суп" />
-            <p class="portion">Вес: 310 г</p>
-            <p class="description">
-              Грибы ши-таки, водоросли вакаме, бульон рыбный, тофу, мисо-паста, кунжут.
-            </p>
-            <p class="price">260 грн</p>
-          </li>
-        </ul>
-        <a class="full-list link-no-dekor" href="">Посмотреть все супы</a>
+        <div class="container">
+          <h2 class="title">Супы</h2>
+          <ul class="list list-card list-no-marker">
+            <li class="item item-card">
+              <h3 class="subtitle">Бульон куриный</h3>
+              <img class="img-card" src="./images/chicken-broth.jpg" alt="Бульон куриный" />
+              <p class="portion">Вес: 300 г</p>
+              <p class="description">
+                Лук зеленый, морковь, петрушка, бульон куриный, яйца перепелиные, спагетти.
+              </p>
+              <p class="price">250 грн</p>
+            </li>
+            <li class="item item-card">
+              <h3 class="subtitle">Сырный крем-суп</h3>
+              <img class="img-card" src="./images/cheese-cream-soup.jpg" alt="Сырный крем-суп" />
+              <p class="portion">Вес: 310 г</p>
+              <p class="description">
+                Лук репчатый, морковь, бульон куриный, укроп, котлета куриная, сырное ассорти.
+              </p>
+              <p class="price">280 грн</p>
+            </li>
+            <li class="item item-card">
+              <h3 class="subtitle">Мисо-суп</h3>
+              <img class="img-card" src="./images/miso-soup.jpg" alt="Мисо-суп" />
+              <p class="portion">Вес: 310 г</p>
+              <p class="description">
+                Грибы ши-таки, водоросли вакаме, бульон рыбный, тофу, мисо-паста, кунжут.
+              </p>
+              <p class="price">260 грн</p>
+            </li>
+          </ul>
+          <a class="full-list link-no-dekor" href="">Посмотреть все супы</a>
+        </div>
       </section>
       <!-- Суши -->
-      <section class="">
-        <h2 class="title">Суши</h2>
-        <ul class="list list-no-marker">
-          <li>
-            <h3 class="subtitle">Унаги рору</h3>
-            <img src="./images/unagi-roru.jpg" alt="Унаги рору" />
-            <p class="portion">Вес: 350 г</p>
-            <p class="description">Рис для суши, угорь, огурец, соус унаги, васаби, кунжут.</p>
-            <p class="price">200 грн</p>
-          </li>
-          <li>
-            <h3 class="subtitle">Royal roll</h3>
-            <img src="./images/royal-roll.jpg" alt="Royal roll" />
-            <p class="portion">Вес: 300 г</p>
-            <p class="description">
-              Лосось, рис для суши, угорь, сыр сливочный, авокадо, совый соус, лимон, укроп, васаби,
-              чили перец, икра.
-            </p>
-            <p class="price">280 грн</p>
-          </li>
-          <li>
-            <h3 class="subtitle">Унаги Филадельфия</h3>
-            <img src="./images/unagi-roru.jpg" alt="Унаги Филадельфия" />
-            <p class="portion">Вес: 320 г</p>
-            <p class="description">
-              Рис для суши, сыр сливочный, угорь, лосось, авокадо, яйцо, икра, васаби.
-            </p>
-            <p class="price">300 грн</p>
-          </li>
-        </ul>
-        <a class="full-list link-no-dekor" href="">Посмотреть все сеты</a>
+      <section class="sushi">
+        <div class="container">
+          <h2 class="title">Суши</h2>
+          <ul class="list list-card list-no-marker">
+            <li class="item item-card">
+              <h3 class="subtitle">Унаги рору</h3>
+              <img class="img-card" src="./images/unagi-roru.jpg" alt="Унаги рору" />
+              <p class="portion">Вес: 350 г</p>
+              <p class="description">Рис для суши, угорь, огурец, соус унаги, васаби, кунжут.</p>
+              <p class="price">200 грн</p>
+            </li>
+            <li class="item item-card">
+              <h3 class="subtitle">Royal roll</h3>
+              <img class="img-card" src="./images/royal-roll.jpg" alt="Royal roll" />
+              <p class="portion">Вес: 300 г</p>
+              <p class="description">
+                Лосось, рис для суши, угорь, сыр сливочный, авокадо, совый соус, лимон, укроп,
+                васаби, чили перец, икра.
+              </p>
+              <p class="price">280 грн</p>
+            </li>
+            <li class="item item-card">
+              <h3 class="subtitle">Филадельфия</h3>
+              <img class="img-card" src="./images/unagi-roru.jpg" alt="Унаги Филадельфия" />
+              <p class="portion">Вес: 320 г</p>
+              <p class="description">
+                Рис для суши, сыр сливочный, угорь, лосось, авокадо, яйцо, икра, васаби.
+              </p>
+              <p class="price">300 грн</p>
+            </li>
+          </ul>
+          <a class="full-list link-no-dekor" href="">Посмотреть все сеты</a>
+        </div>
       </section>
       <!-- Акции -->
       <section class="stock">
-        <h2 class="title">Акции</h2>
-        <ul class="list list-no-marker">
-          <li>
-            <h3 class="subtitle">Салат Мимоза со скидкой 30%</h3>
-            <p class="description">Картофель, морковь, яйца, майонез, лук, тунец.</p>
-            <p class="price">100 грн</p>
-            <img src="./images/mimosa.jpg" alt="Салат Мимоза" />
-          </li>
-          <li>
-            <h3 class="subtitle">Салат Оливье со скидкой 40%</h3>
-            <p class="description">
-              Картофель, морковь, курица, крабовые палочки, консервированные горошек, кукуруза,
-              оливки.
-            </p>
-            <p class="price">80 грн</p>
-            <img src="./images/olivie.jpg" alt="Салат Оливье" />
-          </li>
-        </ul>
-        <a class="full-list link-no-dekor" href="">Посмотреть все акции</a>
+        <div class="container">
+          <h2 class="title">Акции</h2>
+          <ul class="list list-no-marker">
+            <li>
+              <h3 class="subtitle">Салат Мимоза со скидкой 30%</h3>
+              <p class="description">Картофель, морковь, яйца, майонез, лук, тунец.</p>
+              <p class="price">100 грн</p>
+              <img src="./images/mimosa.jpg" alt="Салат Мимоза" />
+            </li>
+            <li>
+              <h3 class="subtitle">Салат Оливье со скидкой 40%</h3>
+              <p class="description">
+                Картофель, морковь, курица, крабовые палочки, консервированные горошек, кукуруза,
+                оливки.
+              </p>
+              <p class="price">80 грн</p>
+              <img src="./images/olivie.jpg" alt="Салат Оливье" />
+            </li>
+          </ul>
+          <a class="full-list link-no-dekor" href="">Посмотреть все акции</a>
+        </div>
       </section>
       <!-- О нас -->
       <section class="about">

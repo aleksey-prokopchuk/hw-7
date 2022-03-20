@@ -22,11 +22,21 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+img {
+  display: block;
+}
 
 /* Список без маркеров */
 .list-no-marker {
   list-style: none;
   padding-left: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -74,6 +84,7 @@ header .button {
   cursor: pointer;
 
   padding: 14px 35px;
+  margin-left: 150px;
 }
 
 header .button:hover,
@@ -81,7 +92,37 @@ header .button:focus {
   background-color: var(--green-color);
 }
 
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 60px;
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Герой */
+.hero {
+  height: 708px;
+  text-align: center;
+  background-image: url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
 /* Секция салаты */
+
+.salads .container,
+.soups .container,
+.sushi .container,
+.stock .container {
+  padding: 50px 0;
+}
 
 .title {
   font-family: var(--main-font);
@@ -96,6 +137,19 @@ header .button:focus {
   margin-bottom: 50px;
 }
 
+.item-card {
+  width: 370px;
+  padding: 24px 30px;
+}
+
+.item-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.img-card {
+  margin-bottom: 18px;
+}
+
 .subtitle {
   font-family: var(--main-font);
   font-weight: 400;
@@ -104,6 +158,7 @@ header .button:focus {
   color: var(--main-txt-color);
 
   margin-bottom: 22px;
+  text-align: center;
 }
 
 .portion {
@@ -117,11 +172,6 @@ header .button:focus {
 }
 
 .description {
-  /* font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: var(--main-txt-color); */
   margin-bottom: 22px;
 }
 
@@ -137,6 +187,13 @@ header .button:focus {
   color: #000000;
 }
 
+.list-card {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 60px;
+}
+
 .full-list {
   display: block;
   font-family: var(--main-font);
@@ -147,6 +204,14 @@ header .button:focus {
   color: var(--dark-green-color);
   text-align: center;
 }
+
+/* Супы */
+
+.soups .item {
+  width: 370px;
+}
+
+/* Акции */
 
 .stock .subtitle {
   font-family: var(--main-font);
@@ -159,7 +224,6 @@ header .button:focus {
   margin-bottom: 35px;
 }
 
-/* Акции */
 .stock .description {
   font-family: var(--main-font);
   font-weight: 300;
@@ -168,6 +232,9 @@ header .button:focus {
   letter-spacing: 0.05em;
 
   margin-bottom: 45px;
+}
+
+.stock .list {
 }
 
 /* О нас */
