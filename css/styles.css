@@ -33,6 +33,7 @@ img {
 }
 
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -117,11 +118,18 @@ header .wrapper {
 
 /* Секция салаты */
 
-.salads .container,
-.soups .container,
-.sushi .container,
-.stock .container {
+.salads,
+.soups,
+.sushi,
+.stock,
+footer {
   padding: 50px 0;
+}
+
+.salads {
+  background-image: url(../images/img-salads.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -140,6 +148,8 @@ header .wrapper {
 .item-card {
   width: 370px;
   padding: 24px 30px;
+
+  background-color: var(--bg-color);
 }
 
 .item-card:not(:last-child) {
@@ -207,11 +217,68 @@ header .wrapper {
 
 /* Супы */
 
+.soups {
+  background-image: url(../images/img-soups.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .soups .item {
   width: 370px;
 }
 
+/* Суши */
+
+.sushi {
+  background-image: url(../images/img-sushi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* Акции */
+
+.stock {
+  background-image: url(../images/img-stock.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stock .wrapper-left {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 90px;
+}
+
+.stock .wrapper-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+
+  margin-bottom: 60px;
+}
+
+/* .stock .wrapper-stock:not(:last-child) {
+  margin-bottom: 90px;
+} */
+
+.wrapper-left .wrapper-description {
+  width: 500px;
+  margin-right: 100px;
+}
+
+.wrapper-right .wrapper-description {
+  width: 500px;
+  margin-left: 100px;
+}
+
+/* -----Решить вопрос с паднгом карточки правая сторона
+        и нижний в последней секции-------------------- */
+/* .stock .wrapper-description:nth-child(2n) {
+  flex-direction: row-reverse;
+  margin-right: 0;
+  margin-left: 100px;
+} */
 
 .stock .subtitle {
   font-family: var(--main-font);
@@ -220,6 +287,7 @@ header .wrapper {
   line-height: 1.23;
   letter-spacing: 0.05em;
   color: var(--main-txt-color);
+  text-align: left;
 
   margin-bottom: 35px;
 }
@@ -238,7 +306,19 @@ header .wrapper {
 }
 
 /* О нас */
+
+.about {
+  background-image: url(../images/img-about.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
 .about .description {
+  width: 730px;
+
   font-weight: 400;
   font-size: 33px;
   line-height: 1.21;
@@ -246,11 +326,34 @@ header .wrapper {
   color: var(--main-txt-color);
 }
 
-.about .description:not(:last-child) {
+/* .about .description:not(:last-child) {
+  margin-bottom: 50px;
+} */
+
+.about .description:nth-child(2n) {
   margin-bottom: 50px;
 }
 
+.about .description:nth-child(2n + 1) {
+  margin-bottom: 0;
+}
+
 /* Контакты */
+
+.contacts {
+  background-image: url(../images/img-contacts.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  padding-top: 50px;
+  padding-bottom: 219px;
+}
+
+.contacts .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts .subtitle {
   font-weight: 500;
   font-size: 31px;
@@ -258,6 +361,7 @@ header .wrapper {
   letter-spacing: 0.05em;
 
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .contacts .item {
@@ -272,8 +376,13 @@ header .wrapper {
   margin-bottom: 4px;
 }
 
-.contacts .link-no-dekor {
+.contacts .link {
   color: var(--main-txt-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--green-color);
 }
 
 .contacts .list:not(:last-child) {
@@ -302,4 +411,15 @@ header .wrapper {
 .contacts .button:hover,
 .contacts .button:focus {
   background-color: var(--green-color);
+}
+
+/* Футер */
+
+footer .container {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo {
+  margin-right: 278px;
 }
