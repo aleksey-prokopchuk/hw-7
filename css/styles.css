@@ -5,6 +5,7 @@
   --light-green-color: #c8e1bf;
   --dark-green-color: #0f3700;
   --bg-color: #fff;
+  --cart-color: #1c6900;
 
   /* Шрифты */
   --main-font: Montserrat, sans-serif;
@@ -58,6 +59,21 @@ body {
 
 /* --- --- Шапка ------------- */
 /* Верхняя линия ------ */
+
+.link-logo {
+  display: block;
+}
+
+.icon-logo {
+  width: 181xp;
+  height: 55px;
+}
+
+header .list {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
 header .link {
   font-family: var(--secondary-font);
   font-weight: 300;
@@ -70,6 +86,14 @@ header .link {
 header .link:hover,
 header .link:focus {
   color: var(--green-color);
+}
+
+header .icon-cart {
+  width: 26px;
+  height: 26px;
+  margin-right: 24px;
+
+  fill: var(--cart-color);
 }
 
 header .button {
@@ -85,7 +109,7 @@ header .button {
   cursor: pointer;
 
   padding: 14px 35px;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 
 header .button:hover,
@@ -113,7 +137,6 @@ header .wrapper {
   background-image: url(../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
 }
 
 /* Секция салаты */
@@ -183,6 +206,28 @@ footer {
 
 .description {
   margin-bottom: 22px;
+}
+
+.wrapper-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-price .icon-cart {
+  width: 48px;
+  height: 48px;
+  padding: 10px;
+
+  background-color: var(--light-green-color);
+  fill: var(--bg-color);
+}
+
+.wrapper-price .icon-cart:hover {
+  fill: var(--bg-color);
+  background-color: var(--cart-color);
+
+  cursor: pointer;
 }
 
 .price {
@@ -401,7 +446,7 @@ footer {
   letter-spacing: 0.05em;
 
   color: var(--bg-color);
-  background-color: var(--light-green-color);
+  background-color: var(--green-color);
   border: none;
   cursor: pointer;
 
@@ -410,7 +455,7 @@ footer {
 
 .contacts .button:hover,
 .contacts .button:focus {
-  background-color: var(--green-color);
+  background-color: var(--cart-color);
 }
 
 /* Футер */
